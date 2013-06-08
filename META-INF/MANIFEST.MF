@@ -1,2 +1,0 @@
-Manifest-Version: 1.0
-FMLCorePlugin: kes5219.utils.coremod.Kes5219UtilsLoadingPlugin
