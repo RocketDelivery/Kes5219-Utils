@@ -3,9 +3,11 @@ package kes5219.utils.coremod;
 import java.util.Map;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin.TransformerExclusions;
 
 @TransformerExclusions({"kes5219.utils.coremod"})
+@MCVersion("1.5.2")
 public class Kes5219UtilsLoadingPlugin implements IFMLLoadingPlugin {
 
 	public String[] getLibraryRequestClass() 
