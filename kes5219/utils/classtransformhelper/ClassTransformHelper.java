@@ -1,4 +1,4 @@
-package kes5219.utils.classtransformer.helper;
+package kes5219.utils.classtransformhelper;
 
 import java.util.Iterator;
 
@@ -71,16 +71,6 @@ public class ClassTransformHelper {
 		return classWriter.toByteArray();
 	}
 	
-	/*public static byte[] changeField(
-			byte[] byteCode,
-			String fieldName,
-			CustomFieldTransformer template) {
-		ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);		
-		ClassReader classReader = new ClassReader(byteCode);
-		classReader.accept(template, 0);
-		return classWriter.toByteArray();
-	}*/
-	
 	public static byte[] injectSimpleHookAtProfilerSection(
 			byte[] byteCode,
 			String tgtMethodName,
@@ -102,6 +92,7 @@ public class ClassTransformHelper {
 		classReader.accept(transformer, 0);
 		return classWriter.toByteArray();
 		
+		//alternative method of doing this. Placed here for future reference
 		/*ClassNode cn = new ClassNode();
 		ClassReader cr = new ClassReader(byteCode);
 		cr.accept(cn, 0);

@@ -1,4 +1,4 @@
-package kes5219.utils.classtransformer.helper;
+package kes5219.utils.classtransformhelper;
 
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.Attribute;
