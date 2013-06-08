@@ -1,7 +1,5 @@
 package kes5219.utils.common;
 
-import kes5219.improvedfirstperson.common.IFPCommonProxy;
-import kes5219.improvedfirstperson.common.ModImprovedFirstPerson;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.Mod.Init;
@@ -13,7 +11,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid = "kes5219_Utility", name = "Kes5219 Utility Mods", version = "1_IFP1.5.1r1")
+@Mod(modid = "kes5219_Utility", name = "Kes5219 Utility Mods", version = "R1_MC1.5.2")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class ModKes5219Utils {
 	
